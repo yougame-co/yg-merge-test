@@ -1,4 +1,4 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Orb Tap</title>
-<style>html,body{margin:0;height:100%;background:#1c1830;color:#eee;font:18px system-ui;overflow:hidden}#o{position:absolute;width:90px;height:90px;border-radius:50%;background:#f0b43c;cursor:pointer}#s{position:absolute;top:12px;left:16px}</style></head>
+<style>html,body{margin:0;height:100%;background:#1c1830;color:#eee;font:18px system-ui;overflow:hidden}#o{position:absolute;width:90px;height:90px;border-radius:50%;background:#4cc3ff;cursor:pointer}#s{position:absolute;top:12px;left:16px}</style></head>
 <body><div id="s">Score: 0</div><div id="o"></div>
-<script>let s=0;const o=document.getElementById("o"),t=document.getElementById("s");function move(){o.style.left=Math.random()*(innerWidth-90)+"px";o.style.top=40+Math.random()*(innerHeight-130)+"px"}o.onclick=()=>{s++;t.textContent="Score: "+s;move()};move();</script></body></html>
+<script>let s=0;const o=document.getElementById("o"),t=document.getElementById("s");function move(){o.style.left=Math.random()*(innerWidth-90)+"px";o.style.top=40+Math.random()*(innerHeight-130)+"px"}o.onclick=()=>{s++;t.textContent="Score: "+s+(s>=10?" · nice!":"");move()};move();</script></body></html>
